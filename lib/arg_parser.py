@@ -11,8 +11,7 @@ def parse_args():
                         help="API key of user to be used for authentication",
                         default=None, required=True)
     common_parser.add_argument('--gerritUrl',
-                        help="Gerrit Server (Default is https://gerrit-epk.seli.gic.ericsson.se)",
-                        default="https://gerrit-epk.seli.gic.ericsson.se")
+                        help="Gerrit Server URL")
 
     common_parser_filter = argparse.ArgumentParser(add_help=False)
     common_parser_filter.add_argument('--project', help='Enter the Project name')
